@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="7ixRO4pw8mZNdsDCuTxmzSWCdCRfM7lG4nNTVxKGiY0" />
+    <meta name="description" content="Resume2Site is used by Students,Developer and Professional to build beautiful portfolio website. It's easy, fast and has everything you need to get started today.">
+    <meta name="author" content="Resume2Site">
+    <script data-ad-client="ca-pub-1325533494418823" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="keywords" content="portfolio,web design,website design,website builder,webdesign,Create an Online Portfolio,portfolio builder,portfolio generator">
+    <script data-ad-client="ca-pub-7970311056283911" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <title>{% block title %}{% endblock %} - CodeScript</title>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176761697-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-176761697-1');
+    </script>
+    <meta name="google-site-verification" content="wc79QR3xlwfhdbMkaxjbe_KWoFz76ckLcTyg5wgqI28" />
+    
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/static/css/base.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script>
+      // Paste this code under the head tag or in a separate JS file.
+      // Wait for window load
+      $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");
+      });
+    </script>
+    {% block style %}
+    {% endblock %}
+    <style>
+      .no-js #loader { display: none; }
+      .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+      .se-pre-con {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url(https://media.giphy.com/media/hL9q5k9dk9l0wGd4e0/giphy.gif) center no-repeat rgb(3, 3, 3);
+      }
+      .nav-link-box {
+        display: inline-block;
+        padding: 5px 15px;
+        border: 2px solid white;
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;
+      }
+      .nav-link-box:hover {
+        background-color: lightgray;
+        color: black;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  
+  <body>
+
+    <div class="se-pre-con"></div>
+    <nav class="navbar navbar-expand-lg py-3 navbar-dark shadow-sm" style="background: gray;">
+      <div class="container">
+        <a href="/" class="navbar-brand">
+          <span class="text-uppercase font-weight-bold">Resume2Site</span>
+        </a>
+    
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+    
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="https://github.com/binayaginesh/Resume2Site.git" class="nav-link nav-link-box">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contactus" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="container-fluid">
+      {% block content %}
+      {% endblock %}
+    </div>
+    
+    <div class="container-fluid bg-primary">
+      <!-- Footer -->
+      <footer class="container">
+        <!-- Copyright -->
+        <div class="row">
+          <div class="col-sm-6 text-center py-3">
+            <a style="text-decoration: none; color: tomato; font-weight: bold;" href="templates\ResumeBuilder.html">Resume2Site</a>
+          </div>
+          <div class="col-sm-6 text-center py-3">
+            <a style="cursor:pointer;color: tomato;" target="popup" onclick="window.open('https://postimages.org/','Image Link Generator', 'width=600,height=500')">Generate Image Link</a>
+          </div>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
